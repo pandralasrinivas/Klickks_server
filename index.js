@@ -6,11 +6,7 @@ const cors = require("cors");
 
 
 app.use(express.json());
-app.use(cors({
-  origin: 'https://klickks-client.onrender.com/', // Replace with your frontend's Render URL
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true,
-}));
+app.use(cors());
 // Routes
 app.use("/api", authRoutes);
 

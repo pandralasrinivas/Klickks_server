@@ -6,7 +6,6 @@ const cors = require("cors");
 
 
 app.use(express.json());
-const cors = require('cors');
 
 const allowedOrigins = [
   'https://klickks-client.onrender.com', // Replace with your frontend URL
